@@ -7,13 +7,13 @@
 }
 
 .social-icons img {
-  width: 30px; /* Уменьшаем размер иконки */
-  height: 30px;
+  width: 40px; /* Уменьшаем размер иконки */
+  height: 50px;
   cursor: pointer; /* Указатель при наведении */
   transition: transform 0.2s, opacity 0.2s; /* Эффекты при наведении */
 }
 
 .social-icons img:hover {
   transform: scale(1.2); /* Увеличение при наведении */
-  opacity: 0.8;         /* Слегка прозрачное состояние */
+  opacity: 0.9;         /* Слегка прозрачное состояние */
 }
