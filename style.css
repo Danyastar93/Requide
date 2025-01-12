@@ -7,8 +7,8 @@
 }
 
 .social-icons img {
-  width: 40px; /* Уменьшаем размер иконки */
-  height: 50px;
+  width: 50px; /* Уменьшаем размер иконки */
+  height: 40px;
   cursor: pointer; /* Указатель при наведении */
   transition: transform 0.2s, opacity 0.2s; /* Эффекты при наведении */
 }
