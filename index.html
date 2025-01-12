@@ -38,39 +38,7 @@
     <section id="news">
         <h2 class="fade-in">Новости</h2>
         <p class="fade-in">Здесь будут публиковаться обновления игры и информация о прогрессе разработки.</p>
-    </section>
-
-<script>
-    // Загружаем данные из news.json
-    fetch('news.json')
-        .then(response => response.json())
-        .then(news => {
-            const newsContainer = document.getElementById('news-container');
-            news.forEach(item => {
-                const article = document.createElement('article');
-                article.classList.add('news-item');
-                
-                const title = document.createElement('h3');
-                title.textContent = item.title;
-                
-                const content = document.createElement('p');
-                content.textContent = item.content;
-                
-                const date = document.createElement('small');
-                date.textContent = `Дата: ${item.date}`;
-                
-                article.appendChild(title);
-                article.appendChild(content);
-                article.appendChild(date);
-                
-                newsContainer.appendChild(article);
-            });
-        })
-        .catch(error => {
-            console.error("Ошибка при загрузке новостей:", error);
-        });
-</script>
-    </section>
+        <h3> новость 1: тест</h3>
 
     <footer>
         <p class="fade-in">&copy; 2025 Danystar93. Все права защищены.</p>
