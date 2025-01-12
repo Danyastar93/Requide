@@ -1,0 +1,19 @@
+.social-icons {
+  position: fixed; /* Фиксированное положение */
+  top: 10px;       /* Отступ от верхнего края */
+  right: 10px;     /* Отступ от правого края */
+  display: flex;   /* Ряд расположения иконок */
+  gap: 10px;       /* Расстояние между иконками */
+}
+
+.social-icons img {
+  width: 30px; /* Уменьшаем размер иконки */
+  height: 30px;
+  cursor: pointer; /* Указатель при наведении */
+  transition: transform 0.2s, opacity 0.2s; /* Эффекты при наведении */
+}
+
+.social-icons img:hover {
+  transform: scale(1.2); /* Увеличение при наведении */
+  opacity: 0.8;         /* Слегка прозрачное состояние */
+}
