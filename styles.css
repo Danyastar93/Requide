@@ -1,0 +1,133 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, p {
+    margin: 0 0 20px 0;
+}
+
+/* Заголовки */
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #ff6347;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeIn 1.5s forwards;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 0.5s;
+}
+
+/* Стили для секций */
+section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+/* Навигация */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ff6347;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+/* Анимация для ссылок в навигации */
+nav ul li a:before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff6347;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+nav ul li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Анимации для появления элементов */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Слайд-эффект для ссылок */
+.slide-in {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 0.8s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Подвал */
+footer {
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 2s;
+}
